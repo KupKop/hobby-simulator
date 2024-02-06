@@ -13,17 +13,17 @@ let isAlive = true
 let newCard = ""
 
 function gameStarter() {
-//let gameStart = document.getElementById("button");
-//const messageEl = document.getElementById("message-el");
-const firstCard = Math.floor((Math.random() * 11) + 2);
-const secondCard = Math.floor((Math.random() * 11) + 2);
-const sum = firstCard + secondCard
-//let message = ""
-const cardsel = document.getElementById("cards-el");
-let message = ""
+    //let gameStart = document.getElementById("button");
+    //const messageEl = document.getElementById("message-el");
+    const firstCard = Math.floor((Math.random() * 11) + 2);
+    const secondCard = Math.floor((Math.random() * 11) + 2);
+    const sum = firstCard + secondCard
+    //let message = ""
+    const cardsel = document.getElementById("cards-el");
+    let message = ""
 
-if (sum <= 20) {
-    message = "Chceš kartu mrtko? 🙂"
+    if (sum <= 20) {
+        message = "Chceš kartu mrtko? 🙂"
     } else if (sum === 21) {
         message = "GG EZ! 🥳"
         hasBlackJack = true
@@ -38,9 +38,9 @@ if (sum <= 20) {
     document.getElementById("sum-el").innerText = "Sum: " + sum;
     document.getElementById("message-el").innerText = message;
 
-//sumel.innerText = "Sum: " + sum
-//messageEl.innerText = message
-//cardsel.innerText = "Cards: " + cardsel2
+    //sumel.innerText = "Sum: " + sum
+    //messageEl.innerText = message
+    //cardsel.innerText = "Cards: " + cardsel2
 }
 
 
