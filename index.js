@@ -14,12 +14,12 @@ let newCard = ""
 
 function gameStarter() {
 //let gameStart = document.getElementById("button");
-const messageEl = document.getElementById("message-el");
+//const messageEl = document.getElementById("message-el");
 const firstCard = Math.floor((Math.random() * 11) + 2);
 const secondCard = Math.floor((Math.random() * 11) + 2);
 const sum = firstCard + secondCard
 //let message = ""
-const cardsel = document.getElementById("cards-el");
+//const cardsel = document.getElementById("cards-el");
 let message = document.getElementById("notif-el");
 
 if (sum <= 20) {
@@ -34,13 +34,13 @@ if (sum <= 20) {
 
     //notifel = message
     cardsel2 = firstCard + ", " + secondCard
-    //document.getElementById("cards-el").innerText = "Cards: " + cardsel;
+    document.getElementById("cards-el").innerText = "Cards: " + cardsel2;
     document.getElementById("sum-el").innerText = "Sum: " + sum;
-    //document.getElementById("message-el").innerText = notifel;
+    document.getElementById("message-el").innerText = message;
 
 //sumel.innerText = "Sum: " + sum
-messageEl.innerText = message
-cardsel.innerText = "Cards: " + cardsel2
+//messageEl.innerText = message
+//cardsel.innerText = "Cards: " + cardsel2
 }
 
 
