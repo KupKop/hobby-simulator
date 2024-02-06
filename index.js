@@ -14,13 +14,13 @@ let newCard = ""
 
 function gameStarter() {
 //let gameStart = document.getElementById("button");
-let messageEl = document.getElementById("message-el");
-let firstCard = Math.floor((Math.random() * 11) + 2);
-let secondCard = Math.floor((Math.random() * 11) + 2);
-let sum = firstCard + secondCard
-let message = ""
-let cardsel = document.getElementById("cards-el");
-let notifel = document.getElementById("notif-el");
+const messageEl = document.getElementById("message-el");
+const firstCard = Math.floor((Math.random() * 11) + 2);
+const secondCard = Math.floor((Math.random() * 11) + 2);
+const sum = firstCard + secondCard
+//let message = ""
+const cardsel = document.getElementById("cards-el");
+let message = document.getElementById("notif-el");
 
 if (sum <= 20) {
     message = "Chceš kartu mrtko? 🙂"
@@ -32,14 +32,14 @@ if (sum <= 20) {
         isAlive = false
     }
 
-    notifel = message
+    //notifel = message
     cardsel2 = firstCard + ", " + secondCard
     //document.getElementById("cards-el").innerText = "Cards: " + cardsel;
     document.getElementById("sum-el").innerText = "Sum: " + sum;
     //document.getElementById("message-el").innerText = notifel;
 
 //sumel.innerText = "Sum: " + sum
-messageEl.innerText = notifel
+messageEl.innerText = message
 cardsel.innerText = "Cards: " + cardsel2
 }
 
