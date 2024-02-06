@@ -1,0 +1,78 @@
+/* Complete the CSS styling according to the provided design */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("images/table.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    font-weight: bold;
+    
+}
+
+h1 {
+    
+    color: goldenrod;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#message-el {
+    
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+#cards-el{
+    
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+#sum-el{
+    
+    color: white;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+#notif-el{
+    
+    color: white;
+    text-align: center;
+        font-size: 40px;
+}
+
+.btngrp button{
+    background-color: goldenrod;
+    border: 1px black;
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 24px;
+    cursor: pointer;
+    
+    
+}
+
+.btngrp button:not(:last-child) {
+    border-right: none;
+}
+
+.btngrp::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btngrp button:hover {
+    background-color: antiquewhite;
+}
