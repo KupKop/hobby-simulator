@@ -6,7 +6,7 @@ let message = ""
 const firstCard = Math.floor((Math.random() * 11) + 2);
 const secondCard = Math.floor((Math.random() * 11) + 2);
 let sum = firstCard + secondCard
-let cardsel2 = firstCard + ", " + secondCard
+let cards = [firstCard, secondCard]
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let messageEl = document.getElementById("message-el");
@@ -26,7 +26,7 @@ function renderGame() {
         isAlive = false
     }
 
-    cardsEl.textContent = "Cards: " + cardsel2
+    cardsEl.textContent = "Cards: " + cards
     sumEl.textContent = "Sum: " + sum
     messageEl.textContent = message
 
@@ -36,13 +36,9 @@ function renderGame() {
 }
 
 function newCard() {
-    const nextCard = Math.floor((Math.random() * 11) + 2);
+    cards.push(nextCard = Math.floor((Math.random() * 11) + 2))
     sum = sum + nextCard
     document.getElementById("sum-el").innerText = "Sum: " + sum;
     renderGame();
 
 }
-
-
-
-
