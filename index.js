@@ -12,7 +12,7 @@ let cardsEl = document.getElementById("cards-el");
 let messageEl = document.getElementById("message-el");
 
 function startGame() {
-    renderGame();
+    renderGame()
 }
 
 function renderGame() {
@@ -40,7 +40,7 @@ function newCard() {
     sum = sum + nextCard
     document.getElementById("sum-el").innerText = "Sum: " + sum;
     renderGame();
-    
+
 }
 
 
